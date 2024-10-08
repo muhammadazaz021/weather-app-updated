@@ -1,0 +1,86 @@
+/* src/App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.app-header {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  animation: header-slide 1s ease-in-out;
+}
+
+@keyframes header-slide {
+  0% { opacity: 0; transform: translateY(-50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+/* src/App.css */
+
+.app-container {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh; /* Full height for background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center vertically */
+}
+
+.app-header {
+  background-color: #007bff; /* Light blue color */
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .app-header {
+  background-color: #1e1e1e; /* Darker header for dark mode */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Softer shadow for dark mode */
+}
+
+.toggle-button {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 20px; /* Rounded button */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Smooth transition */
+  margin-top: 10px; /* Space above button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for button */
+}
+
+.toggle-button:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: white; /* White text on hover */
+}
+
+.toggle-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus ring */
+}

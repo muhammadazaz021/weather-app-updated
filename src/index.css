@@ -1,0 +1,25 @@
+/* src/index.css */
+
+.weather-app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+}
